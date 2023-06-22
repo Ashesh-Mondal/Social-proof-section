@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin-top: 10rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.header .left-container,
+.header .right-container {
+  width: 50%;
+}
+
+.left-container .heading {
+  color: hsl(300, 43%, 22%);
+  width: 70%;
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.left-container .text-content {
+  font-size: 1.7rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  line-height: 2rem;
+  width: 70%;
+}
+
+.rates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.rates div:nth-child(2) {
+  margin: 2rem 0;
+}
+
+.reviews,
+.report-guru,
+.best-tech {
+  width: 43rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.reviews-text,
+.report-guru-text,
+.bestTech-text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.reviews img:first-child,
+.report-guru img:first-child,
+.best-tech img:first-child {
+  padding-left: 3rem;
+}
+
+.reviews img,
+.report-guru img,
+.best-tech img {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.rates .reviews {
+  position: relative;
+  left: -10rem;
+}
+
+.rates .report-guru {
+  position: relative;
+  left: -5rem;
+}
+
+.card-container {
+  display: flex;
+  height: 50rem;
+  margin-top: 10rem;
+}
+
+.card-container .card-2 {
+  margin: 0 2rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+  padding: 3rem;
+  height: 22rem;
+  overflow: auto;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+}
+
+.card-text {
+  line-height: 2rem;
+  color: hsl(300, 24%, 96%);
+}
+
+.image-name-verified {
+  display: flex;
+  align-items: center;
+}
+
+.card-text {
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.card-2 {
+  position: relative;
+  top: 2rem;
+}
+
+.card-3 {
+  position: relative;
+  top: 4rem;
+}
+
+/* #################### Mobile View ######################### */
+
+@media (min-width: 376px) and (max-width: 980px) {
+  .container {
+    width: 100%;
+  }
+
+  .left-container {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-container .heading {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rates .reviews {
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+
+  .rates .report-guru {
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+
+  .rates .best-tech {
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+
+  .reviews,
+  .report-guru,
+  .best-tech {
+    width: 35rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+  }
+
+  .reviews img:first-child,
+  .report-guru img:first-child,
+  .best-tech img:first-child {
+    padding-left: 2rem;
+  }
+
+  .reviews img,
+  .report-guru img,
+  .best-tech img {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .reviews,
+  .report-guru,
+  .best-tech {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews {
+    margin-bottom: 2rem;
+  }
+
+  .best-tech {
+    margin-top: 2rem;
+  }
+
+  .rates div:nth-child(2) {
+    margin: 0;
+  }
+
+  .reviews-text,
+  .report-guru-text,
+  .bestTech-text {
+    padding-bottom: 2rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1,
+  .card-3 {
+    margin: 0 1.6rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
+    padding: 3rem;
+    width: 35rem;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    font-size: 50%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .left-container {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-container .heading {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rates .reviews {
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+
+  .rates .report-guru {
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+
+  .rates .best-tech {
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+
+  .reviews,
+  .report-guru,
+  .best-tech {
+    width: 35rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+  }
+
+  .reviews img:first-child,
+  .report-guru img:first-child,
+  .best-tech img:first-child {
+    padding-left: 2rem;
+  }
+
+  .reviews img,
+  .report-guru img,
+  .best-tech img {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .reviews,
+  .report-guru,
+  .best-tech {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews {
+    margin-bottom: 2rem;
+  }
+
+  .best-tech {
+    margin-top: 2rem;
+  }
+
+  .rates div:nth-child(2) {
+    margin: 0;
+  }
+
+  .reviews-text,
+  .report-guru-text,
+  .bestTech-text {
+    padding-bottom: 2rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1,
+  .card-3 {
+    margin: 0 1.6rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
+    padding: 3rem;
+    width: 35rem;
+    overflow: visible;
+  }
+}
